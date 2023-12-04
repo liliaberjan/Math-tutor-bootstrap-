@@ -88,25 +88,6 @@
 }
 
 
-#tutorial {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-#tutorial h1 {
-    padding-bottom: 70px;
-}
-
-#tutorial-col ul {
-    padding-top: 50px;
-    padding-left: 50px;
-}
-
-#tutrial-col ul li {
-    padding-top: 15px;
-
-}
-
 #resume {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -340,6 +321,92 @@ h6 {
     margin-top: -40px;
 }
 
+#tutorial .tutorial-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #tutorial .tutorial-item .tutorial-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  #tutorial .tutorial-item .tutorial-link .tutorial-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(89, 0, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+  #tutorial .tutorial-item .tutorial-link .tutorial-hover .tutorial-hover-content {
+    font-size: 1.25rem;
+    color: white;
+  }
+  #tutorial .tutorial-item .tutorial-link:hover .tutorial-hover {
+    opacity: 1;
+  }
+  #tutorial .tutorial-item .tutorial-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+  }
+  #tutorial .tutorial-item .tutorial-caption .tutorial-caption-heading {
+    font-size: 1.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  #tutorial .tutorial-item .tutorial-caption .tutorial-caption-subheading {
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .tutorial-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .tutorial-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .tutorial-modal .modal-content h2, .tutorial-modal .modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .tutorial-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .tutorial-modal .modal-content p {
+    margin-bottom: 2rem;
+  }
+  .tutorial-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+  }
+  .tutorial-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .tutorial-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .tutorial-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+  .bg-light {
+    background-color: white!important; 
+}
 @media (max-width: 768px) {
 
     .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
